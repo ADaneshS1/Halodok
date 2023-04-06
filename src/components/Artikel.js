@@ -3,7 +3,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 const Navart = () => {
     return (
-        <Navbar>
+        <Navbar style={{boxShadow:"none"}}>
             <Container>
                 <Navbar.Brand href="#home" style={{fontSize:"27px"}}>Baca 100+ Artikel Baru</Navbar.Brand>
                 <Navbar.Toggle />

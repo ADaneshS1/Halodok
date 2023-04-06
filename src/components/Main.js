@@ -12,9 +12,10 @@ import Navart from "./Artikel";
 import Pill from "./Navpill";
 import Carartik from "./Cardartik";
 
-import Obat from "./Obatvit";
 import Fitur from "./Fitures";
 import Semua from "./Lihat";
+
+import Foot from "./Footers";
 
 // Img logo
 import Logo1 from './../assets/halodoc-logo.png'
@@ -31,6 +32,15 @@ import Home from './../assets/home-lab.png'
 
 // Img fig1
 import Figr from './../assets/animal-health-v2.png'
+import Lan1 from './../assets/Layan1.png'
+import Lan2 from './../assets/Layan2.png'
+import Lan3 from './../assets/Layan3.png'
+import Lan4 from './../assets/Layan4.png'
+import Lan5 from './../assets/Layan5.png'
+import Lan6 from './../assets/Layan6.png'
+import Lan7 from './../assets/Layan7.png'
+import Lan8 from './../assets/Layan8.png'
+import Lan9 from './../assets/Layan9.png'
 
 // IMg banner
 import Bannne from './../assets/697613_31-3-2023_0-51-15.jpeg'
@@ -83,15 +93,15 @@ const Main = () => {
                 
                 <div className="col-10">
                         <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Figr} para={"Layanan kees"}/>                    
+                        <Fig1 image={Lan1} para={"Layanan kees"}/>
+                        <Fig1 image={Lan2} para={"Layanan kees"}/>
+                        <Fig1 image={Lan3} para={"Layanan kees"}/>
+                        <Fig1 image={Lan4} para={"Layanan kees"}/>
+                        <Fig1 image={Lan5} para={"Layanan kees"}/>
+                        <Fig1 image={Lan6} para={"Layanan kees"}/>
+                        <Fig1 image={Lan7} para={"Layanan kees"}/>
+                        <Fig1 image={Lan8} para={"Layanan kees"}/>
+                        <Fig1 image={Lan9} para={"Layanan kees"}/>                    
                 </div>  
 
                 <div className="col-10">
@@ -129,17 +139,19 @@ const Main = () => {
 
             <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginTop:"30px"}}>
 
-                <div className="col-10"><Navart/></div>
+                <div className="col-10">
+                    <Navart/>
+                </div>
 
                 <div className="col-10">
                     <Pill/>
                 </div>
 
                 <div className="col-10" style={{display:"flex", gap:"20px"}}>
-                    <Carartik image={Kenal} judul={"Kenali 8 jenis makanan sehat"} tema={"Diet"} paraf={"titiktitiktitik"}/>
-                    <Carartik image={Kenal} judul={"Kenali 8 jenis makanan sehat"} tema={"Diet"} paraf={"titiktitiktitik"}/>
-                    <Carartik image={Kenal} judul={"Kenali 8 jenis makanan sehat"} tema={"Diet"} paraf={"titiktitiktitik"}/>
-                    <Carartik image={Kenal} judul={"Kenali 8 jenis makanan sehat"} tema={"Diet"} paraf={"titiktitiktitik"}/>
+                    <Carartik image={Kenal} judul={"Kenali 8 jenis makanan sehat"} tema={"Diet"} paraf={".............."}/>
+                    <Carartik image={Kenal} judul={"Kenali 8 jenis makanan sehat"} tema={"Diet"} paraf={".............."}/>
+                    <Carartik image={Kenal} judul={"Kenali 8 jenis makanan sehat"} tema={"Diet"} paraf={".............."}/>
+                    <Carartik image={Kenal} judul={"Kenali 8 jenis makanan sehat"} tema={"Diet"} paraf={".............."}/>
                 </div>
 
             </div>
@@ -147,7 +159,8 @@ const Main = () => {
             <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginTop:"30px"}}>
 
                 <div className="col-10">
-                    <Obat/>
+                    <p style={{fontSize:"27px"}}>Obat & Vitamin</p>
+                    <p style={{fontSize:"15px"}}>Dapatkan informasi seputar kandungan, aturan, petunjuk penggunaan obat dan vitamin di sini </p>
                 </div>
 
                 <div className="col-10">
@@ -165,7 +178,7 @@ const Main = () => {
                 </div>
 
             </div>
-
+            <Foot/>
         </div>
     )
 }

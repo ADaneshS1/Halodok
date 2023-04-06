@@ -2,10 +2,10 @@ import Nav from 'react-bootstrap/Nav';
 
 const Pill = () => {
   return (
-        <Nav variant="pills" defaultActiveKey="/home" style={{gap:"5px"}}>
+        <Nav variant="pills" defaultActiveKey="/home" style={{gap:"5px", backgroundColor:"#fff", marginTop:"20px"}}>
 
-        <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px"}}>
-            <Nav.Link style={{color:"black"}} eventKey="link-1">Terbaru</Nav.Link>
+        <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px", boxShadow:"none"}}>
+            <Nav.Link style={{color:"black", boxShadow:"none"}} eventKey="link-1">Terbaru</Nav.Link>
         </Nav.Item>
 
         <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px"}}>
