@@ -1,34 +1,72 @@
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import React, { useState } from 'react';
+import {
+  MDBContainer,
+  MDBNavbar,
+  MDBNavbarBrand,
+  MDBNavbarToggler,
+  MDBIcon,
+  MDBNavbarNav,
+  MDBNavbarItem,
+  MDBNavbarLink,
+  MDBBtn,
+  MDBCollapse,
+} from 'mdb-react-ui-kit';
 
-const Navig = (props) => {
-    return (
-        <Navbar bg="white" expand="lg" style={{borderBottom:"1.5px solid #b3b3b3"}}>
-          <Container>
-            <Navbar.Brand><img src={props.image} width="180px" /></Navbar.Brand>
-            <Navbar.Toggle aria-controls="navbarScroll" />
-            <Navbar.Collapse id="navbarScroll">
-              <Nav
-                className="me-auto my-2 my-lg-0"
-                style={{ maxHeight: '100px' }}
-                navbarScroll
-              >
-                <Nav.Link href="#" style={{color:"black", padding:"0px 15px"}}>Beranda</Nav.Link>
-                <Nav.Link href="#" style={{color:"black", padding:"0px 15px"}}>Artikel</Nav.Link>
-                <Nav.Link href="#" style={{color:"black", padding:"0px 15px"}}>Aplikasi</Nav.Link>
-                <Nav.Link href="#" style={{color:"black", padding:"0px 15px"}}>Riwayat</Nav.Link>
-              </Nav>
-              <Form className="d-flex">
-                <Button variant="danger">Login</Button>
-              </Form>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      );
+import Logo1 from './../assets/halodoc-logo.png'
+
+const Navig = () => {
+  const [showBasic, setShowBasic] = useState(false);
+
+  return (
+    <MDBNavbar expand='lg' light bgColor='light'>
+      <MDBContainer className='p-0'>
+
+        <MDBNavbarToggler
+          aria-controls='navbarSupportedContent'
+          aria-expanded='false'
+          aria-label='Toggle navigation'
+          onClick={() => setShowBasic(!showBasic)}>
+          <MDBIcon icon='bars'/>
+        </MDBNavbarToggler>
+
+        <MDBNavbarBrand href='#'>
+          <img src={Logo1} style={{width:"180px"}}></img>
+        </MDBNavbarBrand>
+
+        <MDBCollapse navbar show={showBasic}>
+
+          <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
+
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' href='#'>Beranda</MDBNavbarLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' href='#'>Artikel</MDBNavbarLink>
+            </MDBNavbarItem>
+
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' href='#'>Aplikasi</MDBNavbarLink>
+            </MDBNavbarItem>
+            
+            <MDBNavbarItem>
+              <MDBNavbarLink active aria-current='page' href='#'>Riwayat</MDBNavbarLink>
+            </MDBNavbarItem>
+
+          </MDBNavbarNav>
+
+          
+        </MDBCollapse>
+
+        <form style={{width:"10%", padding:"0"}}>
+            <MDBBtn color='danger'>Login</MDBBtn>
+          </form>
+
+      </MDBContainer>
+     
+    </MDBNavbar>
+    
+  );
 }
 
 export default Navig;

@@ -1,34 +1,19 @@
-import Nav from 'react-bootstrap/Nav';
+import React from 'react';
+import { MDBBtn, MDBBtnGroup } from 'mdb-react-ui-kit';
 
 const Pill = () => {
   return (
-        <Nav variant="pills" defaultActiveKey="/home" style={{gap:"5px", backgroundColor:"#fff", marginTop:"20px"}}>
 
-        <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px", boxShadow:"none"}}>
-            <Nav.Link style={{color:"black", boxShadow:"none"}} eventKey="link-1">Terbaru</Nav.Link>
-        </Nav.Item>
+    <MDBBtnGroup shadow='0' aria-label='Basic example' style={{gap:"15px"}}>
 
-        <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px"}}>
-            <Nav.Link style={{color:"black"}} eventKey="link-2">Populer</Nav.Link>
-        </Nav.Item>
+      <MDBBtn color='secondary' outline>Terbaru</MDBBtn>
+      <MDBBtn color='secondary' outline>Populer</MDBBtn>
+      <MDBBtn color='secondary' outline>Cacar Monyet</MDBBtn>
+      <MDBBtn color='secondary' outline>Hepatitis</MDBBtn>
+      <MDBBtn color='secondary' outline>Kehamilan</MDBBtn>
 
-        <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px"}}>
-            <Nav.Link style={{color:"black"}} eventKey="link-3">Kanker</Nav.Link>
-        </Nav.Item>
+    </MDBBtnGroup>
 
-        <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px"}}>
-            <Nav.Link style={{color:"black"}} eventKey="link-4">Cacar Monyet</Nav.Link>
-        </Nav.Item>
-
-        <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px"}}>
-            <Nav.Link style={{color:"black"}} eventKey="link-5">Hepatitis</Nav.Link>
-        </Nav.Item>
-
-        <Nav.Item style={{border:"1px solid #b3b3b3", borderRadius:"10px"}}>
-            <Nav.Link style={{color:"black"}} eventKey="link-6">Kehamilan</Nav.Link>
-        </Nav.Item>
-
-        </Nav>
   );
 }
 

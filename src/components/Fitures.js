@@ -6,9 +6,9 @@ const Fitur = (props) => {
 
             <Card.Img style={{width:"15%"}} src={props.image}/>
 
-            <Card.Body>
+            <div>
                 <Card.Text>{props.paraf}</Card.Text>
-            </Card.Body>
+            </div>
 
         </Card>
     );

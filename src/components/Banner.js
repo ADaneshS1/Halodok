@@ -1,11 +1,11 @@
 import Card from 'react-bootstrap/Card';
 
 const Bann = (props) => {
-    return (
-        <Card style={{border:"none", margin:"0px 15px"}}>
-            <Card.Img src={props.image} style={{width:"25vw"}}/>
-        </Card>
-    ) 
+  return (
+    <Card style={{ width: "100%", height:"100%", border:"none" }}>
+      <Card.Img variant="top" src={props.image} style={{borderRadius:"8px"}} />
+    </Card>
+  );
 }
 
 export default Bann;

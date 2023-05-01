@@ -6,61 +6,62 @@ import Google from './../assets/google-play-badge.png'
 import App from './../assets/app-store-badge.png'
 import Ste from './../assets/hd-white-logo-icon.svg'
 
-export default function Foot() {
+const Foot = () => {
   return (
-    <MDBFooter className='text-center text-lg-start text-muted'>
+    <MDBFooter className='text-center text-lg-start text-muted mt-5'>
 
       <section style={{backgroundColor:"#46568E", paddingTop:"15px", color:"#fff"}}>
+      
         <MDBContainer className='mt-5'>
 
         <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginTop:"30px"}}>
-          <div className="col-11">
-          <img src={Logo} style={{width:"15%", height:"100%"}}></img>
-          </div>
+            <div className="col-11">
+              <img src={Logo} style={{width:"15%", height:"100%"}}></img>
+            </div>
         </div>
 
-        
+          <MDBRow className='mt-4'>
 
-          <MDBRow className='mt-3'>
+            <MDBCol style={{display:"flex", flexDirection:"column"}}> 
 
-            <MDBCol > 
+              <div className=''>
+                <ul style={{listStyleType:"none"}}>
+                  <li>Site Map</li>
+                </ul>
 
-                <div style={{display:"flex", flexDirection:"column"}}>
-                  <h6 className='fw-bold text-center col-3'>Site Map</h6>
+                <div style={{display:"flex"}}>
 
-                  <div style={{display:"flex"}}>
-
-                    <div style={{width:"100%"}}>
-                    
-                          <ul style={{listStyleType:"none"}}>
-                              <li>FAQ</li>
-                              <li>Blog</li>
-                              <li style={{width:"100%"}}>Syarat & Ketentuan</li>
-                              <li>Kebijakan Privasi</li>
-                              <li>Promo</li>
-                          </ul>
-                    </div>
-
-                    <div style={{width:"100%"}}>
-
-                          <ul style={{listStyleType:"none"}}>
-                              <li>Karir</li>
-                              <li>Security</li>
-                              <li>Media</li>
-                              <li style={{width:"100%"}}>Corporate Partnership</li>
-                          </ul>
-                    </div>
+                  <div style={{width:"100%"}}>
+                      
+                    <ul style={{listStyleType:"none"}}>
+                        <li>FAQ</li>
+                        <li>Blog</li>
+                        <li style={{width:"100%"}}>Syarat & Ketentuan</li>
+                        <li>Kebijakan Privasi</li>
+                        <li>Promo</li>
+                    </ul>
 
                   </div>
-                    
+
+                  <div style={{width:"100%"}}>
+
+                    <ul style={{listStyleType:"none"}}>
+                        <li>Karir</li>
+                        <li>Security</li>
+                        <li>Media</li>
+                        <li style={{width:"100%"}}>Corporate Partnership</li>
+                    </ul>
+                        
+                  </div>
 
                 </div>
+                    
+              </div>
                 
             </MDBCol>
 
-
             <MDBCol>
-              <div style={{lineHeight:"12px"}}>
+              <div style={{lineHeight:"10px"}}>
                 <h6 className='fw-bold'>Layanan Pengaduan Konsumen</h6>
                 <p>PT Media Dokter Investama</p>
                 <p>Jl. H.R. Rasuna Said Kav B32-33, Jakarta Selatan </p>
@@ -85,7 +86,7 @@ export default function Foot() {
 
               <h6 className='mt-3'>Apakah kamu dokter?</h6>
 
-              <div className='col-5' style={{display:"flex", alignItems:"center", backgroundColor:"grey", borderRadius:"6px", gap:"6px", padding:"4px 6px"}}>
+              <div className='col-5 bg-danger' style={{display:"flex", justifyContent:"center", alignItems:"center",borderRadius:"6px", gap:"6px", padding:"4px 6px"}}>
                 <img src={Ste} style={{width:"20%"}}></img>
                 <h6 style={{color:"#fff"}}>DAFTAR</h6>
               </div>
@@ -93,6 +94,7 @@ export default function Foot() {
             </MDBCol>
 
           </MDBRow>
+
         </MDBContainer>
       </section>
 
@@ -106,8 +108,8 @@ export default function Foot() {
         <div>
 
           <a href='' className='me-4 text-reset'>
-              <MDBIcon fab icon="twitter" />
-            </a>
+              <MDBIcon fab icon="twitter"/>
+          </a>
 
           <a href='' className='me-4 text-reset'>
               <MDBIcon fab icon="facebook-f" />
@@ -130,3 +132,5 @@ export default function Foot() {
     </MDBFooter>
   );
 }
+
+export default Foot;

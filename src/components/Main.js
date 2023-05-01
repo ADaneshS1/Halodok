@@ -6,7 +6,7 @@ import Tekss from "./Teks";
 import Fig1 from "./Figure1";
 import Fig2 from "./Figure2";
 
-import Bann from "./Banner";
+import Caro from "./Carousel";
 
 import Navart from "./Artikel";
 import Pill from "./Navpill";
@@ -17,8 +17,6 @@ import Semua from "./Lihat";
 
 import Foot from "./Footers";
 
-// Img logo
-import Logo1 from './../assets/halodoc-logo.png'
 
 // Img banner
 import Bg from './../assets/bg-2.svg'
@@ -54,7 +52,7 @@ import Fitures from './../assets/378205_15-3-2023_10-19-12.png'
 const Main = () => {
     return (
         <div>
-            <Navig image={Logo1}/>
+            <Navig/>
 
             <div style={{backgroundImage:`url(${Bg})`, backgroundSize:"cover", backgroundRepeat:"no-repeat"}}>
 
@@ -63,8 +61,8 @@ const Main = () => {
                     <div className="row justify-content-center">
 
                         <div className="col-11 mt-5">
-                            <p style={{fontWeight:"600", fontSize:"27px",lineHeight:"10px"}}>Solusi Kesehatan Terlengkap</p>
-                            <p className="col-6" style={{fontSize:"16px"}}>Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi seputar kesehatan, semua bisa di Halodoc! </p>
+                            <p style={{fontWeight:"600", fontSize:"27px"}}>Solusi Kesehatan Terlengkap</p>
+                            <p className="col-6" style={{fontSize:"16px"}}>Chat dokter, kunjungi rumah sakit, beli obat, cek lab dan update informasi seputar kesehatan, semua bisa di Halodoc!</p>
                         </div>
 
                         <div className="row col-11">
@@ -81,27 +79,27 @@ const Main = () => {
                     
                     </div>
 
-                 </div>
+                </div>
                  
             </div>
 
             <div style={{display:"flex", flexDirection:"column", alignItems:"center", marginTop:"30px"}}>
 
-            <div className="col-10">
-                <p style={{fontSize:"27px"}}>Layanan Khusus</p>
-            </div>
+                <div className="col-10">
+                    <p style={{fontSize:"27px"}}>Layanan Khusus</p>
+                </div>
                 
                 <div className="col-10">
-                        <Fig1 image={Figr} para={"Layanan kees"}/>
-                        <Fig1 image={Lan1} para={"Layanan kees"}/>
-                        <Fig1 image={Lan2} para={"Layanan kees"}/>
-                        <Fig1 image={Lan3} para={"Layanan kees"}/>
-                        <Fig1 image={Lan4} para={"Layanan kees"}/>
-                        <Fig1 image={Lan5} para={"Layanan kees"}/>
-                        <Fig1 image={Lan6} para={"Layanan kees"}/>
-                        <Fig1 image={Lan7} para={"Layanan kees"}/>
-                        <Fig1 image={Lan8} para={"Layanan kees"}/>
-                        <Fig1 image={Lan9} para={"Layanan kees"}/>                    
+                    <Fig1 image={Figr} para={"Kesehatan Hewan"}/>
+                    <Fig1 image={Lan1} para={"Layanan Bidan"}/>
+                    <Fig1 image={Lan2} para={"Tes COVID-19"}/>
+                    <Fig1 image={Lan3} para={"Perawatan Diabetes"}/>
+                    <Fig1 image={Lan4} para={"Vaksinasi COVID-19"}/>
+                    <Fig1 image={Lan5} para={"Kesehatan Jantung"}/>
+                    <Fig1 image={Lan6} para={"Kesehatan Kulit"}/>
+                    <Fig1 image={Lan7} para={"Kesehatan Seksual"}/>
+                    <Fig1 image={Lan8} para={"Kesehatan Mental"}/>
+                    <Fig1 image={Lan9} para={"Parenting"}/>                    
                 </div>  
 
                 <div className="col-10">
@@ -109,7 +107,7 @@ const Main = () => {
                 </div>
                 
                 <div className="col-10">
-                <Fig2 image={Figr} para={"Layanan kees"}/>
+                    <Fig2 image={Figr} para={"Layanan kees"}/>
                         <Fig2 image={Figr} para={"Layanan kees"}/>
                         <Fig2 image={Figr} para={"Layanan kees"}/>
                         <Fig2 image={Figr} para={"Layanan kees"}/>
@@ -130,9 +128,7 @@ const Main = () => {
                 </div>
 
                 <div className="d-flex col-10">
-                        <Bann image={Bannne}/>
-                        <Bann image={Bannne}/>
-                        <Bann image={Bannne}/>
+                    <Caro/>
                 </div>
                
             </div>
@@ -178,6 +174,7 @@ const Main = () => {
                 </div>
 
             </div>
+
             <Foot/>
         </div>
     )
